@@ -4,11 +4,11 @@ function git_branch() {
 	git branch --show-current 2> /dev/null | sed -e 's/.*/[&]/'
 }
 
-COLOR_DEF=$'%f'			#default white
-COLOR_USR=$'%F{010}'		#green
+COLOR_DEF=$'%f'             #default white
+COLOR_USR=$'%F{010}'	    #green
 COLOR_DIR=$'%F{011}'		#yellow
 COLOR_GIT=$'%F{009}'		#red
-COLOR_DOLLA_SIGN=$'%F{014}'	#blue
+COLOR_DOLLA_SIGN=$'%F{014}' #blue
 
 setopt PROMPT_SUBST
 
